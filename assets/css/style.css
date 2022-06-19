@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+body { 
+    margin: 0px;
+    padding: 0px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    background-color: #ccc
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.left-side img {
+    width: 50px;
+    height: auto;
+}
+
+.right-side {
+    padding: 20px 40px 20px 40px;
+}
+.right-side h3 {
+    text-align: center;
+}
+.right-side label {
+    display: block;
+    margin-bottom: 20px;
+}
+.right-side input {
+    width: 100%;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+}
+.cadastreseButtom {
+    color: #000;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.cadastreseButtom:hover {
+    background-color: #04ec18;
+    color:#FFF;
+}
+
+/* Error */
+.error {
+    font-size: 14px;
+    color: #FFF;
+    background-color: #ff0000;
+    padding: 6px;
+    border-radius: 5px;
+    text-align: center;
+}

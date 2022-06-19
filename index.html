@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de formulario</title>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Inicio da tela de login -->
+<div class="screen">
+    <!-- Imagem -->
+    <div class="left-side">
+        <img src="assets/img/login.png" />
+    </div>
+    <!-- Formulario -->
+    <div class="right-side">
+        <h3>Criar conta</h3>
+        <form method="POST" action="cadastro.php" class="validator">
+            <label>
+                Nome completo: <br/>
+                <input type="text" name="name" data-rules="required|min=2" />
+            </label>
+            <label>
+                E-email: <br/>
+                <input type="email" name="email" data-rules="required" >
+            </label>
+            <label>
+                Senha: <br/>
+                <input type="password" name="senha" data-rules="required|min=5" />
+            </label>
+            <label>
+                <input class="cadastreseButtom" type="submit" value="Cadastre-se">
+            </label>
+        </form>
+
+        <!-- Ja tem uma conta cadastrese -->
+        <div class="temLoginEntrar">
+            Já tem uma conta ? <a href="" >Faça o login</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+
+
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
